@@ -5,6 +5,22 @@
     <title>Hello</title>
 </head>
 <body>
-
+<script>
+    let count=0;
+    for (let i=1;i<=100;i++){
+        count++;
+        if (i % 3 === 0 && i%5===0 ) {
+            i = "FizzBuzz";
+        }
+        else if (i%3===0){
+            i="Fizz";
+        }
+        else if (i%5===0) {
+            i = "Buzz";
+        }
+        document.write(i+"<br/>");
+        i=count;
+    }
+</script>
 </body>
 </html>

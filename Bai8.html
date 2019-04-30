@@ -5,6 +5,23 @@
     <title>Hello</title>
 </head>
 <body>
-
+<input type="button" value="Chơi" onclick="ham()"/>
+<script>
+    function ham() {
+        let nhapso = parseInt(prompt("Xin mời nhập số"));
+        for (let i = 1; i <= 3; i++) {
+        let songaunhien = Math.floor((Math.random() * nhapso) + 1);
+        let doan = parseInt(prompt("Xin mời doan số"));
+            if (doan === songaunhien) {
+                alert("Bạn đã đoán trúng" +" "+ "số ngẫu nhiên là" + songaunhien + " " + "đoán là" + doan);
+                alert("Chúc mừng bạn , Kết thúc lượt chơi");
+                break;
+            } else {
+                alert("Bạn đã đoán sai" +" "+ "số ngẫu nhiên là" + songaunhien + " " + "đoán là" + doan);
+            }
+        }
+        alert("Bạn đã hết lượt chơi vui lòng nạp thêm tiền ^^");
+    }
+</script>
 </body>
 </html>

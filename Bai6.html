@@ -5,6 +5,19 @@
     <title>Hello</title>
 </head>
 <body>
-
+<script>
+    let count=0;
+    let tong=0;
+    for (let i=0;i>=0;i++){
+        if (i%7===0){
+            tong+=i;
+            count+=1;
+        }
+        if (count>30){
+            break;
+        }
+    }
+    document.write("Tổng 30 đầu tiên số chia hết cho 7 là"+" "+tong);
+</script>
 </body>
 </html>
