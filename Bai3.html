@@ -5,6 +5,23 @@
     <title>Hello</title>
 </head>
 <body>
-
+<script>
+    function fibonaci(n) {
+        if (n<3){
+            return  1;
+        }
+        else {
+            return fibonaci(n-1)+fibonaci(n-2);
+        }
+    }
+    let n=1;
+    for (let i = 1; i >=0; i++) {
+        n++;
+        document.write("fibonaci(" + i + ") = " + fibonaci(i)+"<br/>");
+        if (n>20){
+            break;
+        }
+    }
+</script>
 </body>
 </html>

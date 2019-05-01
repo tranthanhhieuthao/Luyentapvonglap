@@ -5,6 +5,26 @@
     <title>Hello</title>
 </head>
 <body>
-
+<script>
+    function fibonaci(n) {
+        if (n<3){
+            return  1;
+        }
+        else {
+            return fibonaci(n-1)+fibonaci(n-2);
+        }
+    }
+    let n=1;
+    let tong=0;
+    for (let i = 1; i >=0; i++) {
+        n++;
+        document.write("fibonaci(" + i + ") = " + fibonaci(i)+"<br/>");
+        tong+=fibonaci(i);
+        if (n>20){
+            break;
+        }
+    }
+    document.write("Tổng 20 số fibonaci đầu tiên là"+" "+tong);
+</script>
 </body>
 </html>
